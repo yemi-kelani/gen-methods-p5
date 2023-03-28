@@ -1,0 +1,34 @@
+html,body {
+	/* set a default font for the whole page */
+	font-family: 'Nunito', sans-serif; 
+	background-color: rgb(253, 240, 110);
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#swatch-holder {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.swatch canvas {
+	margin:  10px auto;
+	border:  10px solid white;
+	border-radius: 5px;
+	box-shadow: 0 15px 15px 2px rgba(100, 100, 100, 0.5);
+}
+
+
+.swatch .title {
+	text-align: center;
+}

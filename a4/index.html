@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+  <head>
+    <!-- Google fonts, remove or replace! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;800&family=Nunito:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="canvas-holder"></div>
+    <div id="controls">
+      <div id="speed-debug">
+        <label>Speed</label><input id="speed-slider" type="range" default="1" step=".1" min="0" max="2">
+         <label>debug:</label><input type="checkbox" id="debug-draw" /> 
+      </div>
+      <label>Ratio of <b>melpomene</b> to <b>thalia</b></label><input id="mix-slider" type="range" default="0.5" step=".1" min="0" max="1">
+      (select ratio then select a system to restart)
+      <div id="desc">wind system particles with flowers</div>
+      <div class="row">
+        <div id="buttons"></div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="vector.js"></script>
+    <script src="particle.js"></script>
+    <script src="p_basic.js"></script>
+    <script src="p_wind.js"></script>
+    <script src="p_flower.js"></script>
+    <script src="p_gravity.js"></script>
+    <script src="p_flower_boids.js"></script>
+    <script src="p_springs.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
